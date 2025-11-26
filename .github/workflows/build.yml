@@ -1,4 +1,44 @@
-name: build.yml
+name: CI Build and Test
+
 on:
+  push:
+    branches: ['**']
+
+  pull_request:
+    branches: ['**']
+
+  workflow_dispatch:
+
 
 jobs:
+  build_and_test:
+
+    name: Build, Test, and Lint
+
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build task
+        run: npm run build
+
+      - name: Run tests
+
+        run: npm run test
+
+      - name: Run linter check
+        run: npm run lint
+        
