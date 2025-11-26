@@ -1,0 +1,3 @@
+<root>
+<employee><id>1</id><name>Ali</name><salary>9000</salary></employee><employee><id>2</id><name>Kamal</name><salary>22000</salary></employee><employee><id>3</id><name>Amal</name><salary>23000</salary></employee>
+</root>

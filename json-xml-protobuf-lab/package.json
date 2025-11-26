@@ -1,0 +1,17 @@
+{
+  "name": "json-xml-protobuf-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "protobufjs": "^7.5.4",
+    "xml-js": "^1.6.11"
+  }
+}
